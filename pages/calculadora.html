@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CalculoSweet</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <header class="text-center">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+              <!-- Logo alinhada à esquerda -->
+              <a class="navbar-brand" href="../index.html">Sair da Calculadora</a>
+          </div>
+      </nav>
+  </header>
+    
+    <main>
+        <div class="container mt-4">
+            <h2 class="text-center">Calculadora de Custo e Margem de Lucro </h2>
+            <form id="ingredientForm">
+              <div class="form-group">
+                <label for="ingredientName">Ingrediente*</label>
+                <input type="text" class="form-control" id="ingredientName" placeholder="Nome do ingrediente">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="quantity">Quantidade*</label>
+                  <input type="number" class="form-control" id="quantity" placeholder="Quantidade comprada">
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="amount">Rendimento*</label>
+                  <input type="number" class="form-control" id="amount" placeholder="O quanto você produz com de acordo com a quantidade">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="price">Preço por Unidade (R$)*</label>
+                <div class="input-group">
+                  <input type="number" class="form-control" id="price" placeholder="Preço por unidade do ingrediente">
+                  <div class="input-group-append">
+                    <button type="button" class="btn btn-primary" onclick="addIngredient()">Calcular</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          
+            <table class="table mt-2">
+              <thead>
+                <tr>
+                  <th>Ingrediente</th>
+                  <th>Quantidade</th>
+                  <th>Rendimento</th>
+                  <th>Preço Und(R$)</th>
+                  <th>Custo Und(R$)</th>
+                </tr>
+              </thead>
+              <tbody id="ingredientList">
+                <!-- A lista de ingredientes será exibida aqui -->
+              </tbody>
+            </table>
+            
+            <div class="row mt-2">
+              <div class="col-md-4">
+                <h4 class="text-center">Total Gasto: <span id="totalAmount">R$ 0.00</span></h4>
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-center">Preço de Venda Sugerido: <span id="suggestedPrice">R$ 0.00</span></h4>
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-center">Margem de Lucro: <span id="profitMargin">0%</span></h4>
+              </div>
+            </div>
+          
+          </div>
+    </main>
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="https://www.linkedin.com/in/thiago-alvees/" class="nav-link px-2 text-body-secondary"><img src="../assets/img/logotipo-do-linkedin.png" alt="" srcset="" width="24px"></a></li>
+        <li class="nav-item"><a href="https://github.com/Thiago-Alvees" class="nav-link px-2 text-body-secondary"><img src="../assets/img/github.png" alt="" srcset="" width="24px"></a></li>
+      </ul>
+      <p class="text-center text-body-secondary">Todos os direitos reservados © Thiago Alves, Inc 2024</p>
+    </footer>
+<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="/assets/js/script.js"></script>
+</body>
+</html>
