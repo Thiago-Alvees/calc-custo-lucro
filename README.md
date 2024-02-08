@@ -2,4 +2,4 @@ Desenvolvi este projeto pensando em ajudar as pessoas que trabalham com negócio
 
 Neste projeto foi utilizado o bootstrap e o javascript.
 
-Link do Site: 
+Link do Site: https://thiago-alvees.github.io/calc-custo-lucro/index.html
