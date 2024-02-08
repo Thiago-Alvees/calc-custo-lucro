@@ -19,62 +19,62 @@
   </header>
     
     <main>
-        <div class="container mt-4">
-            <h2 class="text-center">Calculadora de Custo e Margem de Lucro </h2>
-            <form id="ingredientForm">
-              <div class="form-group">
-                <label for="ingredientName">Ingrediente*</label>
-                <input type="text" class="form-control" id="ingredientName" placeholder="Nome do ingrediente">
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-12">
-                  <label for="quantity">Quantidade*</label>
-                  <input type="number" class="form-control" id="quantity" placeholder="Quantidade comprada">
-                </div>
-                <div class="form-group col-md-12">
-                  <label for="amount">Rendimento*</label>
-                  <input type="number" class="form-control" id="amount" placeholder="O quanto você produz com de acordo com a quantidade">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="price">Preço por Unidade (R$)*</label>
-                <div class="input-group">
-                  <input type="number" class="form-control" id="price" placeholder="Preço por unidade do ingrediente">
-                  <div class="input-group-append">
-                    <button type="button" class="btn btn-primary" onclick="addIngredient()">Calcular</button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          
-            <table class="table mt-2">
-              <thead>
-                <tr>
-                  <th>Ingrediente</th>
-                  <th>Quantidade</th>
-                  <th>Rendimento</th>
-                  <th>Preço Und(R$)</th>
-                  <th>Custo Und(R$)</th>
-                </tr>
-              </thead>
-              <tbody id="ingredientList">
-                <!-- A lista de ingredientes será exibida aqui -->
-              </tbody>
-            </table>
-            
-            <div class="row mt-2">
-              <div class="col-md-4">
-                <h4 class="text-center">Total Gasto: <span id="totalAmount">R$ 0.00</span></h4>
-              </div>
-              <div class="col-md-4">
-                <h4 class="text-center">Preço de Venda Sugerido: <span id="suggestedPrice">R$ 0.00</span></h4>
-              </div>
-              <div class="col-md-4">
-                <h4 class="text-center">Margem de Lucro: <span id="profitMargin">0%</span></h4>
+      <div class="container mt-4">
+        <h2 class="text-center">Calculadora de Custo e Margem de Lucro </h2>
+        <form id="ingredientForm">
+          <div class="form-group">
+            <label for="ingredientName">Ingrediente*</label>
+            <input type="text" class="form-control" id="ingredientName" placeholder="Nome do ingrediente">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="quantity">Quantidade*</label>
+              <input type="number" class="form-control" id="quantity" placeholder="Quantidade comprada">
+            </div>
+            <div class="form-group">
+              <label for="amount">Reutilização*</label>
+              <input type="number" class="form-control" id="amount" placeholder="O quanto você produz com de acordo com a quantidade">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="price">Preço Und(R$)*</label>
+            <div class="input-group">
+              <input type="number" class="form-control" id="price" placeholder="Preço por unidade do ingrediente">
+              <div class="input-group-append">
+                <button type="button" class="btn btn-primary" onclick="addIngredient()">Adicionar</button>
               </div>
             </div>
-          
           </div>
+        </form>
+      
+        <table class="table mt-4">
+          <thead>
+            <tr>
+              <th>Ingrediente</th>
+              <th>Quantidade</th>
+              <th>Reutilização</th>
+              <th>Preço Und(R$)</th>
+              <th>Total (R$)</th>
+            </tr>
+          </thead>
+          <tbody id="ingredientList">
+            <!-- A lista de ingredientes será exibida aqui -->
+          </tbody>
+        </table>
+        
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <h4 class="text-center">Total Gasto: <span id="totalAmount">R$ 0.00</span></h4>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-center">Preço de Venda Sugerido: <span id="suggestedPrice">R$ 0.00</span></h4>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-center">Margem de Lucro: <span id="profitMargin">0%</span></h4>
+          </div>
+        </div>
+      
+      </div>
     </main>
     <footer class="py-3 my-4">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
